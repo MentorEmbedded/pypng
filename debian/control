@@ -1,0 +1,52 @@
+Source: pypng
+Section: python
+Priority: optional
+Maintainer: Shrikant Bobade <shrikant_bobade@mentor.com>
+Build-Depends: debhelper,
+               dh-python,
+               python-all,
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+Standards-Version: 4.3.0
+Homepage: https://pypi.org/project/pypng/
+
+Package: python-pypng
+Architecture: all
+Depends: python:any (>= 2.7.5-5~)
+Description: Pure Python PNG Reader/Writer (Python 2)
+ The PyPNG module implements support for PNG images. It reads and writes PNG
+ files with all allowable bit depths (1/2/4/8/16/24/32/48/64 bits per pixel) and
+ colour combinations: greyscale (1/2/4/8/16 bit); RGB, RGBA, LA (greyscale with
+ alpha) with 8/16 bits per channel; colour mapped images (1/2/4/8 bit).
+ Adam7 interlacing is supported for reading and writing. A number of optional
+ chunks can be specified (when writing) and understood (when reading): tRNS,
+ bKGD, gAMA.
+ .
+ PyPNG is not a high level toolkit for image processing (like PIL) and does not
+ aim at being a replacement or competitor. Its strength lies in fine-grained
+ extensive support of PNG features. It can also read and write Netpbm PAM files,
+ with a focus on its use as an intermediate format for implementing custom PNG
+ processing.
+ .
+ This package contains the Python 2 version.
+
+Package: python3-pypng
+Architecture: all
+Depends: python3:any (>= 3.3.2-2~)
+Description: Pure Python PNG Reader/Writer (Python 2)
+ The PyPNG module implements support for PNG images. It reads and writes PNG
+ files with all allowable bit depths (1/2/4/8/16/24/32/48/64 bits per pixel) and
+ colour combinations: greyscale (1/2/4/8/16 bit); RGB, RGBA, LA (greyscale with
+ alpha) with 8/16 bits per channel; colour mapped images (1/2/4/8 bit).
+ Adam7 interlacing is supported for reading and writing. A number of optional
+ chunks can be specified (when writing) and understood (when reading): tRNS,
+ bKGD, gAMA.
+ .
+ PyPNG is not a high level toolkit for image processing (like PIL) and does not
+ aim at being a replacement or competitor. Its strength lies in fine-grained
+ extensive support of PNG features. It can also read and write Netpbm PAM files,
+ with a focus on its use as an intermediate format for implementing custom PNG
+ processing.
+ .
+ This package contains the Python 3 version.
